@@ -57,7 +57,7 @@ def read_json_and_run_cli(file_path, logging):
             cards = [random.randint(1, 6) for _ in range(3)]
             cards = sorted(cards)
             token = {"id": track_id, "round": 0, "visited_caesar": False, "cards": cards}
-            print(f"Player {track_id} starts at {segment['segment_id']} with cards {cards}")
+            print(f"Player {track_id} starts at {segment['segmentId']} with cards {cards}")
             tokens.append(token)
     print()
 
